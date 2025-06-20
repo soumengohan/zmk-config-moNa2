@@ -21,6 +21,20 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        atmark: atmark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp AT>;
+            label = "ATMARK";
+        };
+
+        kagikakko: kagikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LBKT &kp RBKT &kp RET &kp LEFT>;
+            label = "KAGIKAKKO";
+        };
     };
 
     behaviors {
